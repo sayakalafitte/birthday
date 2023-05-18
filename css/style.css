@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', 'Abril Fatface';
+    font-weight: 300, 400;
+	-webkit-font-feature-settings: 'palt';
+	font-feature-settings: 'palt';
+    color: #FFF;
+    margin: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover {
+    opacity: 0.6;
+}
+
+ul li{
+    list-style: none;
+}
+/* Utility */
+p {
+    font-size: 1.4em;
+    margin: 0;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.sp{
+    display: block;
+}
+.pc{
+    display: none;
+}
+/*---------------------------
+
+Title
+
+----------------------------*/
+.title{
+    font-family: 'Abril Fatface', cursive;
+    color: #DB745C;
+    font-size: 30px; 
+    white-space: nowrap;
+}
+.title_description{
+    font-family: 'Montserrat', sans-serif;
+    color: #DB745C;
+    font-size: 18px;
+    margin-top: 20px; 
+    white-space: nowrap;
+}
+.title_subtitle{
+    color: #FFF;
+    font-size: 26px; 
+    letter-spacing: 0.1em;
+    padding-top: 30px;
+}
+/*---------------------------
+
+Section
+
+----------------------------*/
+.inner{
+    padding: 0 30px;
+}
+.section-body{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.section-footer{
+    padding-bottom: 40px;
+}
+.bkg1{
+    background: #EDB844;
+}
+.bkg2{
+    background: #DB745C;
+}
+.section-img{
+    width: 100%;
+}
+.section_info{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.8rem;
+    margin-top: 20px;
+}
+
+/*---------------------------
+
+Btn
+
+----------------------------*/
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    background: transparent;
+    padding: 14px 60px;
+    border: 2px solid #fff;
+    transition: .3s;
+    vertical-align: center;
+    letter-spacing:0.1em;
+    margin-top: 40px;
+}
+.btn:hover{
+    background:rgba(255, 255, 255, 0.25);
+}
+.header_btn{
+    margin-top: 60px;
+    color: #DB745C;
+    border: 2px solid #DB745C;
+}
+.header_btn:hover{
+    background: rgba(219, 116, 92, 0.65);
+    color: #FFF;
+}
+
+/*---------------------------
+
+Header
+
+----------------------------*/
+.header{
+    background-image: url(../images/firstview__sp.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_title{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*---------------------------
+
+Main
+
+----------------------------*/
+.maps-outer{
+    position: relative;
+    padding-top: 75%;
+}
+.maps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*-- RSVP FORM --*/
+.form-item{
+    margin-bottom: 30px;
+}
+.form-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 18px;
+    font-size: 1.6em;
+    white-space: nowrap;
+}
+.form-detail{
+    margin: 0;
+}
+.form-parts{
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    border: solid 1px #F4F2F0;
+    background-color: #F4F2F0;
+}
+.form-parts-text{
+    width: 100%;
+    padding: 9px 8px;
+    border-radius: 3px;
+    color: #000;
+    font-size: 1.4rem;
+}
+::placeholder {
+    color:#DB745C;
+  }
+  /* 旧Edge対応 */
+  ::-ms-input-placeholder {
+    color: #DB745C;
+  }
+  /* IE対応 */
+  :-ms-input-placeholder {
+    color: #DB745C;
+  }
+  .selectbox-004 {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.selectbox-004::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #ff8d75;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-004 select {
+    appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
+    background-color: #fff;
+    color: #eb6d55;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 750px) {
+
+    .sp{
+        display: none;
+    }
+
+    .pc{
+        display: block;
+    }
+
+    /*---------------------------
+
+    Title
+
+    ----------------------------*/
+    .title{
+        font-size: 60px; 
+        letter-spacing: 0.5rem;
+    }
+    .title_description{
+        font-size: 20px;
+    }
+    .title_subtitle{
+        font-size: 40px; 
+        padding-top: 60px;
+    }
+    .party-details__info .title_subtitle{
+        padding-top: 30px;
+    }
+    /*---------------------------
+
+    Section
+
+    ----------------------------*/
+    .inner{
+        padding: 0 60px;
+    }
+    .section-body{
+        padding-top: 80px;
+        padding-bottom: 120px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .section-footer{
+        padding-bottom: 120px;
+    }
+    .section-img{
+        float: left;
+        width: 40%;
+        height: auto;
+        padding: 0 80px;
+    }
+    .section_info{
+        font-size: 1.8em;
+        line-height: 1.2em;
+        margin-top: 30px;
+    }
+    .section-rsvp{
+        display: flex;
+        align-items:flex-start;
+    }
+
+    /*---------------------------
+
+    Btn
+
+    ----------------------------*/
+    .btn{
+        font-size: 18px;
+        padding: 20px 80px;
+        margin-top: 60px;
+    }
+    /*---------------------------
+
+    Header
+
+    ----------------------------*/
+    .header{
+        background-image: url(../images/firstview.png);
+    }
+    .header_title{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /*---------------------------
+
+    Main   
+
+    ----------------------------*/
+    .party-details__info{
+        margin: 0 auto;
+    }
+    .maps-outer{
+        padding-top: 23%;
+    }
+
+    /*-- RSVP FORM --*/
+    .form{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .form-parts-text{
+        width: 400px;
+    }
+    /*========= ページトップのためのCSS ===============*/
+    /*リンクの形状*/
+    #page-top a::after{
+        font-family: "Font Awesome 5 Free";
+        content: '\f106';
+        font-weight: 900;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        background:#fff;
+        border-radius: 5px;
+        width: 60px;
+        height: 60px;
+        color: #EDB844;
+        text-align: center;
+        font-size:2rem;
+        transition:all 0.3s;
+    }
+
+    #page-top a:hover{
+        opacity: 0.6;
+    }
+
+    /*リンクを右下に固定*/
+    #page-top {
+        position: fixed;
+        right: 10px;
+        z-index: 2;
+        /*はじめは非表示*/
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    /*　上に上がる動き　*/
+
+    #page-top.UpMove{
+        animation: UpAnime 0.5s forwards;
+    }
+    @keyframes UpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    /*　下に下がる動き　*/
+
+    #page-top.DownMove{
+        animation: DownAnime 0.5s forwards;
+    }
+    @keyframes DownAnime{
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+    }
+
+
+}
